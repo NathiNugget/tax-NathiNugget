@@ -28,6 +28,7 @@ namespace tax_NathiNugget
                 },
                 _ => throw new ArgumentOutOfRangeException(),
             }; 
+            TaxToPay = (int) (income * taxPercent); 
         }
 
         public int TaxToPay { get => taxToPay; private set => taxToPay = value; }
